@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+html, body { background-color: #0C0C0C; overflow-x: clip; }
+
+body {
+  color: #F8FAFC;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection { background: rgba(168,85,247,0.3); }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0C0C0C; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+
+.hero-heading {
+  font-family: 'Kanit', sans-serif;
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.glow-btn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    0 0 20px rgba(168,85,247,0.35),
+    0 0 40px rgba(236,72,153,0.20),
+    inset 0 1px 1px rgba(255,255,255,0.12);
+}
+
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(8px);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.3s;
+}
+
+.skill-chip:hover {
+  background: rgba(255,255,255,0.06);
+}
